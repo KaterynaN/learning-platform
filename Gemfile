@@ -25,6 +25,7 @@ gem "haml-rails", "~> 2.0"
 gem 'simple_form'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
