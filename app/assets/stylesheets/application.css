@@ -8,6 +8,10 @@
     flex: 1 1 30%;
 }
 
+.flex-div {
+    display: flex;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
