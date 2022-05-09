@@ -20,6 +20,14 @@
     background-color: red;
 }
 
+.text-right {
+    text-align: right;
+}
+
+.form-control.is-invalid { background-image: none; }
+
+.form-control.is-valid { background-image: none; }
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -35,4 +43,6 @@
  *= require_tree .
  *= require_self
  */
+
+
 
