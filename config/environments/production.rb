@@ -69,6 +69,14 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
 
+  ActionMailer::Base.smtp_settings = {
+    :port => '587',
+    :address => 'email-smtp.us-east-2.amazonaws.com',
+    :authentication => :plain,
+    :user_name => 'AKIAXY3G7Q2JF525FSOL',
+    :password => 'BGp42cto/8GiV+iUgIH2HYOs1cjs2tXZ4DmNsSYYlHU/',
+    :enable_starttls_auto => true
+  }
   #devise
   #config.action_mailer.default_url_options = { host: 'learning-platform-rails.herokuapp.com' }
 
