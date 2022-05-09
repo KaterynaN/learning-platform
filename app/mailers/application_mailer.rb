@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'support@learning-platform-rails.herokuapp.com'
+  default from: 'kateryna.kl.lt@gmail.com'
   layout 'mailer'
 end
