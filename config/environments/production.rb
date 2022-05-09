@@ -78,13 +78,6 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
 
-  Rails.application.config.middleware.use ExceptionNotification::Rack,
-                                          email: {
-                                            deliver_with: :deliver, # Rails >= 4.2.1 do not need this option since it defaults to :deliver_now
-                                            email_prefix: "[PREFIX] ",
-                                            sender_address: %("error" <kateryna.kl.lt@gmail.com>),
-                                            exception_recipients: %w[yshmarov@gmail.com]
-                                          }
   #devise
   #config.action_mailer.default_url_options = { host: 'learning-platform-rails.herokuapp.com' }
 
