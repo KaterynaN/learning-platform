@@ -26,6 +26,7 @@ gem 'simple_form'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'devise'
 gem 'friendly_id', '~> 5.4.0'
+gem 'ransack'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
