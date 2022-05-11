@@ -1,4 +1,8 @@
 class Course < ApplicationRecord
+  include PublicActivity::Model
+  tracked owner: Proc.new{ |controller, model| controller.current_user }
+
+  belongs_to :user
 
   validates :title, :level, :language, :price, presence: true
   validates :description, presence: true, length: { :minimum => 5 }
@@ -18,8 +22,6 @@ class Course < ApplicationRecord
   def self.levels
     LEVELS.map { |level| [level, level] }
   end
-
-  belongs_to :user
 
   def to_s
     title

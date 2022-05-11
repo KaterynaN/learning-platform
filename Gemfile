@@ -27,6 +27,8 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 gem 'devise'
 gem 'friendly_id', '~> 5.4.0'
 gem 'ransack'
+gem 'public_activity', github: 'chaps-io/public_activity', branch: 'master'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
